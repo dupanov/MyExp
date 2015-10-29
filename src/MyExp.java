@@ -1,5 +1,5 @@
 /**
- * Exponent power x approximied by Fourie series
+
  * Created by Вадик on 29.10.2015.
  */
 public class MyExp {
@@ -10,6 +10,8 @@ public class MyExp {
         }
     }
 
+    /* * Exponent power x approximied by Fourie series
+    * */
     public static double myExp (double x) {
         double exp = 1;
         double sum = 1;
@@ -22,6 +24,10 @@ public class MyExp {
         return sum;
     }
 
+    /*
+    Gauss decomposition of exp(-x^2).
+    Behaves unpredictable with odd and even numer of itterations
+     */
     public static double gauss (double x) {
         double exp = 1;
         double sum = 0;
